@@ -79,6 +79,9 @@ p{margin:0}
 .alert{max-width:680px;margin:0 auto;border:2px solid var(--accent);border-radius:16px;padding:22px 20px;background:#fff}
 .alert h3{font-size:20px}
 .alert p{margin-top:8px}
+.perk{max-width:680px;margin:18px auto 0;display:flex;gap:12px;align-items:center;background:var(--soft);border-radius:14px;padding:16px 18px}
+.perk span{flex:none;background:var(--accent);color:#fff;font-family:var(--font-head);font-weight:900;font-size:14px;border-radius:8px;padding:6px 10px}
+.perk p{font-weight:700}
 .alert .how{margin-top:12px;background:var(--soft);border-radius:10px;padding:12px 14px;font-size:15px}
 
 /* できること */
@@ -147,6 +150,7 @@ footer{text-align:center;font-size:12px;color:var(--muted);padding:22px 16px}
   .svc{grid-template-columns:1fr 1fr}
   .shop-grid{grid-template-columns:1fr}
   .reason{grid-template-columns:1fr;gap:6px}
+  .perk{flex-direction:column;align-items:flex-start;gap:8px}
   section{padding:46px 0}
 }
 @media (max-width:400px){
@@ -218,6 +222,7 @@ footer{text-align:center;font-size:12px;color:var(--muted);padding:22px 16px}
       <p>車検が切れた車は、公道を走ることができません。期限ぎりぎりになると、ご希望の日が選びにくくなることもあります。とくに1月から3月は、車検や車の入れ替えが重なる時期です。</p>
       <p class="how"><b>期限の確かめかた：</b>車検証の「有効期間の満了する日」をご覧ください。分からないときは、車検証の写真をLINEで送っていただければ大丈夫です。</p>
     </div>
+    <div class="perk"><span>車検の特典</span><p>当店で車検を受けていただくと、車検のときのオイル交換が無料、次の車検までのオイル交換が半額（3回まで）になります。</p></div>
     <div class="cta"><a class="btn" href="https://line.me/R/ti/p/@094fhnfy">LINEで車検の予約をする</a></div>
   </div>
 </section>
@@ -229,7 +234,7 @@ footer{text-align:center;font-size:12px;color:var(--muted);padding:22px 16px}
     <p class="lead">買う・乗る・直す・手放すまで、ひとつのお店でご相談いただけます。</p>
     <div class="svc">
       <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l2 2 4-4"/><rect x="3" y="4" width="18" height="16" rx="2"/></svg><h3>車検・点検・整備</h3><p>法定点検やふだんの整備も。ご予約はLINEで。</p></div>
-      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 16l1.5-5a2 2 0 0 1 1.9-1.4h7.2a2 2 0 0 1 1.9 1.4L19 16"/><rect x="3" y="16" width="18" height="3" rx="1"/><circle cx="7" cy="19.5" r="1.2"/><circle cx="17" cy="19.5" r="1.2"/></svg><h3>新車・中古車の販売</h3><p>在庫に無い車も、全国のオークションからお探しします。リースもご相談いただけます。</p></div>
+      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 16l1.5-5a2 2 0 0 1 1.9-1.4h7.2a2 2 0 0 1 1.9 1.4L19 16"/><rect x="3" y="16" width="18" height="3" rx="1"/><circle cx="7" cy="19.5" r="1.2"/><circle cx="17" cy="19.5" r="1.2"/></svg><h3>新車・中古車の販売・リース</h3><p>中古車探しは、在庫に無い車も全国のオークションからお探しします。カーリースもご相談いただけます。</p></div>
       <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h10M4 17h7"/><circle cx="18" cy="16" r="3"/></svg><h3>買取・査定</h3><p>車検証と車の写真を送っていただくところから始められます。</p></div>
       <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-.5-.5-2.5z"/></svg><h3>修理・鈑金塗装</h3><p>キズやへこみは、写真を送っていただくとご相談がスムーズです。</p></div>
       <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.5 5 5.5.8-4 3.9.9 5.5L12 15.6 7.1 18.2l.9-5.5-4-3.9 5.5-.8z"/></svg><h3>コーティング・カーフィルム</h3><p>ボディーやガラスのコーティング、カーフィルムの施工も行っています。</p></div>
@@ -288,6 +293,8 @@ footer{text-align:center;font-size:12px;color:var(--muted);padding:22px 16px}
       <details><summary>ほしい車が在庫にありません</summary><p>在庫に無い車も、全国のオークションからご予算に合わせてお探しします。車種・ご予算・ほしい時期をLINEでお送りください。</p></details>
       <details><summary>買取の査定は、写真だけでもできますか</summary><p>車検証の写真・車の前と後ろの写真・走行距離を送っていただくところから始められます。お店から、査定の進め方をご連絡します。</p></details>
       <details><summary>ローンやリースは使えますか</summary><p>ローン（6〜120回）やリースのご相談ができます。ご利用には審査があります。</p></details>
+      <details><summary>車はどこに停めればいいですか</summary><p>お店の前に停めてください。</p></details>
+      <details><summary>車検の特典はありますか</summary><p>当店で車検を受けていただくと、車検のときのオイル交換が無料、次の車検までのオイル交換が半額（3回まで）になります。</p></details>
       <details><summary>子どもを連れて行っても大丈夫ですか</summary><p>店内にキッズコーナーがあります。お子様連れでもどうぞお越しください。</p></details>
       <details><summary>LINEの返事はすぐに来ますか</summary><p>営業時間（9:30〜18:00・火曜日と水曜日は定休日）の中で、お店から順番にお返事します。メニューのボタンには、すぐに自動でご案内が届きます。</p></details>
     </div>
@@ -304,6 +311,8 @@ footer{text-align:center;font-size:12px;color:var(--muted);padding:22px 16px}
         <div><dt>住所</dt><dd>〒714-1201<br>岡山県小田郡矢掛町矢掛81-1</dd></div>
         <div><dt>営業時間</dt><dd>9:30〜18:00</dd></div>
         <div><dt>定休日</dt><dd>火曜日・水曜日</dd></div>
+        <div><dt>電話</dt><dd><a href="tel:0866634747">0866-63-4747</a></dd></div>
+        <div><dt>駐車場</dt><dd>お店の前</dd></div>
         <div><dt>ご相談</dt><dd>公式LINE（@094fhnfy）</dd></div>
       </dl>
       <div class="map"><iframe title="Auto Shop ZERO の地図" loading="lazy" src="https://www.google.com/maps?q=%E5%B2%A1%E5%B1%B1%E7%9C%8C%E5%B0%8F%E7%94%B0%E9%83%A1%E7%9F%A2%E6%8E%9B%E7%94%BA%E7%9F%A2%E6%8E%9B81-1&amp;output=embed"></iframe></div>
@@ -324,7 +333,7 @@ footer{text-align:center;font-size:12px;color:var(--muted);padding:22px 16px}
 
 <div class="fixed">
   <a class="btn" href="https://line.me/R/ti/p/@094fhnfy">LINEで相談する</a>
-  <a class="btn ghost" href="#access" onclick="document.querySelector('.shop-grid').scrollIntoView({behavior:'smooth'});return false;">地図</a>
+  <a class="btn ghost" href="tel:0866634747">電話</a>
 </div>
 </body>
 </html>
